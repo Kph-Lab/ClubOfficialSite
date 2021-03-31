@@ -3,8 +3,7 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s | 海城中高物理部',
-    title: '海城中高物理部',
+    titleTemplate: '%s海城中高物理部',
     htmlAttrs: {
       lang: 'ja'
     },
