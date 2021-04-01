@@ -3,8 +3,9 @@
   <HomeCarousel />
   <MainNotification />
   <TitleBar title="活動概要" />
-  <About />
+  <AboutCard />
   <TitleBar title="部員の作成した作品" />
+  <WordList />
   <TitleBar title="活動実績" />
   <NavigationFooter />
 
@@ -13,18 +14,20 @@
 
 <script>
 import MainNotification from '@/components/home/MainNotification.vue';
-import About from '@/components/home/About.vue';
+import AboutCard from '@/components/home/AboutCard.vue';
 import TitleBar from '@/components/ui/TitleBar.vue';
 import NavigationFooter from '@/components/layout/NavigationFooter.vue';
+import WordList from '@/components/home/WordList.vue';
 
 
 
 export default {
   components:{
     MainNotification,
-    About,
+    AboutCard,
     TitleBar,
     NavigationFooter,
+    WordList,
   }
 }
 </script>
