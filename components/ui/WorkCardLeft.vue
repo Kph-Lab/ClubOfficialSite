@@ -11,9 +11,7 @@
         </v-col>
         <v-col md=8>
           <v-card-title>{{ title }}</v-card-title>
-          <v-card-text>
-            物理部ではうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたらうんたらかんたら
-          </v-card-text>
+          <v-card-text>{{ description }}</v-card-text>
         </v-col>
       </v-row>
     </v-card>
@@ -23,6 +21,7 @@
 export default{
   props: [
     "title",
+    "description",
   ]
 }
 </script>
