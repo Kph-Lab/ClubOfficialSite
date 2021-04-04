@@ -1,15 +1,17 @@
 <template>
 <div>
-  <!-- ホントは一つのコンポーネントにまとめたいけどこれ以外のベストプラクティスが思いつかない -->
+  <TitleBar title="部員の作成した作品" />
+  <!-- 何故か動いた第一号 -->
   <div
   v-for="(text, i) in texts"
   :key="i">
-    <WorkCardRight
+    <WorkCard
     :title="text.title"
     :description="text.description"
+    workcard="workcard"
     v-if="i%2==0"
     />
-    <WorkCardLeft
+    <WorkCard
     :title="text.title"
     :description="text.description"
     v-if="i%2==1"
@@ -19,8 +21,8 @@
 </template>
 
 <script>
-import WorkCardLeft from '@/components/ui/WorkCardLeft.vue';
-import WorkCardRight from '@/components/ui/WorkCardRight.vue';
+import WorkCard from '@/components/ui/WorkCard.vue';
+import TitleBar from '@/components/ui/TitleBar.vue';
 export default {
   data(){
     return {
@@ -45,14 +47,14 @@ export default {
     }
   },
   components:{
-    WorkCardRight,
-    WorkCardLeft,
+    WorkCard,
+    TitleBar,
   },
 }
 </script>
 
 <style>
-  div.workcard:nth-of-type(odd) {
+  div.workcard {
     display: flex;
     flex-direction: row-reverse;
   }

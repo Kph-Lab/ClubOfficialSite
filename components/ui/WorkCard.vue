@@ -1,15 +1,15 @@
 <template>
     <v-card
-      max-width="70%"
-      class="mx-auto"
+      max-width="60%"
+      class="mx-auto mb-12"
     >
-      <v-row class="workcard">
-        <v-col md=4>
+      <v-row :class="{ workcard }">
+        <v-col class="py-0" md=4>
           <v-img
             src='https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
-            height="300px" />
+            height="250px" />
         </v-col>
-        <v-col md=8>
+        <v-col class="px-8" md=8>
           <v-card-title>{{ title }}</v-card-title>
           <v-card-text>{{ description }}</v-card-text>
         </v-col>
@@ -22,6 +22,7 @@ export default{
   props: [
     "title",
     "description",
+    "workcard",
   ]
 }
 </script>

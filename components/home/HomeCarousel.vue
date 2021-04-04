@@ -1,5 +1,10 @@
 <template>
-  <v-carousel hide-delimiters :show-arrows="false" cycle height="300">
+  <v-carousel
+  class="mb-16"
+  hide-delimiters
+  :show-arrows="false"
+  cycle
+  height="300">
     <v-carousel-item
       v-for="(photo,i) in photos"
       :key="i"
