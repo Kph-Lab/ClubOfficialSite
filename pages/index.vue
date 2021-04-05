@@ -5,7 +5,7 @@
       <MainNotification />
       <AboutCard />
       <WorkList />
-      <TitleBar title="活動実績" />
+      <AchievementList />
     </v-container>
     <NavigationFooter />
   </v-app>
@@ -17,6 +17,7 @@ import AboutCard from '@/components/home/AboutCard.vue';
 import TitleBar from '@/components/ui/TitleBar.vue';
 import NavigationFooter from '@/components/layout/NavigationFooter.vue';
 import WorkList from '@/components/home/WorkList.vue';
+import AchievementList from '@/components/home/AchievementList.vue';
 
 
 
@@ -27,6 +28,7 @@ export default {
     TitleBar,
     NavigationFooter,
     WorkList,
+    AchievementList,
   }
 }
 </script>

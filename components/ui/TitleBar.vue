@@ -15,6 +15,6 @@ export default{
 
 <style>
   .v-banner {
-    border-left: 10px solid black !important;
+    border-left: 10px solid #00ACC1 !important;
   }
 </style>
