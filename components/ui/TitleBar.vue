@@ -1,9 +1,7 @@
 <template>
   <v-banner
-  elevation="3"
-  max-width="60%"
+  elevation="4"
   class="mx-auto mb-8"
-  :styles="{ }"
   >{{ title }}</v-banner>
 </template>
 
@@ -14,3 +12,9 @@ export default{
   ]
 }
 </script>
+
+<style>
+  .v-banner {
+    border-left: 10px solid black !important;
+  }
+</style>

@@ -1,23 +1,22 @@
 <template>
-<div>
-  <TitleBar title="部員の作成した作品" />
-  <!-- 何故か動いた第一号 -->
-  <div
-  v-for="(text, i) in texts"
-  :key="i">
-    <WorkCard
-    :title="text.title"
-    :description="text.description"
-    workcard="workcard"
-    v-if="i%2==0"
-    />
-    <WorkCard
-    :title="text.title"
-    :description="text.description"
-    v-if="i%2==1"
-    />
-  </div>
-</div>
+  <v-container>
+    <TitleBar title="部員の作成した作品" />
+    <div
+    v-for="(text, i) in texts"
+    :key="i">
+      <WorkCard
+      :title="text.title"
+      :description="text.description"
+      workcard="workcard"
+      v-if="i%2==0"
+      />
+      <WorkCard
+      :title="text.title"
+      :description="text.description"
+      v-if="i%2==1"
+      />
+    </div>
+  </v-container>
 </template>
 
 <script>

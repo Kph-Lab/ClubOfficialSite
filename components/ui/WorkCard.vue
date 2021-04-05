@@ -1,6 +1,5 @@
 <template>
     <v-card
-      max-width="60%"
       class="mx-auto mb-12"
     >
       <v-row :class="{ workcard }">

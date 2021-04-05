@@ -1,10 +1,12 @@
 <template>
   <v-app>
     <HomeCarousel />
-    <MainNotification />
-    <AboutCard />
-    <WorkList />
-    <TitleBar title="活動実績" />
+    <v-container fluid class="main_container">
+      <MainNotification />
+      <AboutCard />
+      <WorkList />
+      <TitleBar title="活動実績" />
+    </v-container>
     <NavigationFooter />
   </v-app>
 </template>
@@ -28,3 +30,12 @@ export default {
   }
 }
 </script>
+
+<style>
+ .container {
+   padding: 0;
+ }
+  .main_container {
+    padding: 0 20% 0 20%;
+  }
+</style>

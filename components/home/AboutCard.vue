@@ -3,7 +3,6 @@
     <TitleBar title="活動概要" />
     <v-card
       class="mx-auto mb-16"
-      max-width="60%"
     >
       <v-row>
         <v-col class="py-0" md=4>

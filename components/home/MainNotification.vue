@@ -1,7 +1,7 @@
 <template>
   <v-card
     class="mx-auto mb-16"
-    max-width="60%"
+    elevation="12"
   >
     <v-row>
       <v-col md=5>

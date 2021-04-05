@@ -10,6 +10,7 @@
       :key="i"
       :src="photo.src"
     ></v-carousel-item>
+    <h1 class="carousel_title">Kaijo Physics Club</h1>
   </v-carousel>
 </template>
 
@@ -35,3 +36,14 @@
     }
   }
 </script>
+
+<style>
+.carousel_title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  color: white;
+  font-size: 60px;
+}
+</style>
