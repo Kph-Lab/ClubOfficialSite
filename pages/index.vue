@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <div>
     <HomeCarousel />
     <v-container fluid class="main_container">
       <MainNotification />
@@ -7,15 +7,13 @@
       <WorkList />
       <AchievementList />
     </v-container>
-    <NavigationFooter />
-  </v-app>
+  </div>
 </template>
 
 <script>
 import MainNotification from '@/components/home/MainNotification.vue';
 import AboutCard from '@/components/home/AboutCard.vue';
 import TitleBar from '@/components/ui/TitleBar.vue';
-import NavigationFooter from '@/components/layout/NavigationFooter.vue';
 import WorkList from '@/components/home/WorkList.vue';
 import AchievementList from '@/components/home/AchievementList.vue';
 
@@ -26,7 +24,6 @@ export default {
     MainNotification,
     AboutCard,
     TitleBar,
-    NavigationFooter,
     WorkList,
     AchievementList,
   }

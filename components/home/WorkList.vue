@@ -4,15 +4,17 @@
     <div
     v-for="(text, i) in texts"
     :key="i">
-      <WorkCard
+      <WorkListCard
       :title="text.title"
       :description="text.description"
+      :link="text.link"
       workcard="workcard"
       v-if="i%2==0"
       />
-      <WorkCard
+      <WorkListCard
       :title="text.title"
       :description="text.description"
+      :link="text.link"
       v-if="i%2==1"
       />
     </div>
@@ -20,7 +22,7 @@
 </template>
 
 <script>
-import WorkCard from '@/components/ui/WorkCard.vue';
+import WorkListCard from '@/components/ui/WorkListCard.vue';
 import TitleBar from '@/components/ui/TitleBar.vue';
 export default {
   data(){
@@ -29,24 +31,33 @@ export default {
         {
           title: "電子工作",
           description: "電子工作班では-----------------------------------------------------------------------------------",
+          link: "/worklist/electronic",
         },
         {
           title: "プログラミング",
           description: "プログラミング班では-----------------------------------------------------------------------------------",
+          link: "/worklist/programming",
         },
         {
           title: "ペットボトルロケット",
           description: "ペットボトルロケット班では-----------------------------------------------------------------------------------",
+          link: "/worklist/bottlerocket",
         },
         {
           title: "動画編集・Webサイト制作",
           description: "動画編集・Webサイト制作班では-----------------------------------------------------------------------------------",
+          link: "/worklist/lectureship",
+        },
+        {
+          title: "ピタゴラスイッチ",
+          description: "動画編集・Webサイト制作班では-----------------------------------------------------------------------------------",
+          link: "/worklist/pythagora",
         },
       ]
     }
   },
   components:{
-    WorkCard,
+    WorkListCard,
     TitleBar,
   },
 }
