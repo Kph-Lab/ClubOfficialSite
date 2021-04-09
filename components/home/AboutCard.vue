@@ -4,7 +4,9 @@
     <v-card
       class="mx-auto mb-16"
     >
-      <v-row>
+      <v-row v-bind:class="[
+      isActive === true ? 'active' : 'inactive'
+      ]">
         <v-col class="py-0" md=4>
           <v-img
             src='https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
@@ -28,6 +30,11 @@ import TitleBar from '@/components/ui/TitleBar.vue';
 export default {
   components:{
     TitleBar,
+  },
+  data: function() {
+    return {
+      isActive: false
+    }
   }
 }
 </script>
