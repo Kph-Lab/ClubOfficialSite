@@ -1,7 +1,8 @@
 <template>
-    <div class="max-w-2xl mx-auto">
+    <div class="max-w-2xl mx-auto flex flex-col gap-8">
         <h2 class="text-5xl text-center">部誌</h2>
-        <div class="flex flex-col gap-4 mt-8">
+        <slot/>
+        <div class="flex flex-col gap-4">
             <div
                 class="flex flex-col md:flex-row md:items-center gap-4 basis-32"
                 v-for="blog in blogs">
