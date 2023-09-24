@@ -30,7 +30,7 @@
             </div>
         </div>
         <div class="py-20 px-8">
-            <BlogList :blogs="blogs"/>
+            <BlogList :blogs="showBlogs"/>
         </div>
         <Footer/>
     </main>
@@ -39,7 +39,6 @@
 const { data } = await useAsyncData('navigation', () => fetchContentNavigation())
 const blogs = data.value?.find(topArticle => topArticle._path == "/blog")?.children ?? []
 
-const works = computed(() => {
-    return blogs?.filter(blog => (blog.tags as string[]).includes("作品"))
-})
+const showBlogs = blogs.slice(0, 5)
+const works = blogs?.filter(blog => (blog.tags as string[]).includes("作品")).slice(0, 4)
 </script>

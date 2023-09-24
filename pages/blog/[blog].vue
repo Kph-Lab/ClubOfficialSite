@@ -1,9 +1,9 @@
 <template>
     <main class="flex flex-col gap-8">
         <Header/>
-        <div class="max-w-2xl mx-auto pt-8">
+        <div class="max-w-2xl mx-auto pt-8 px-8">
             <div>
-                <h1 class="text-6xl font-semibold">{{ title ?? "記事が見つかりません" }}</h1>
+                <h1 class="text-4xl md:text-6xl font-semibold">{{ title ?? "記事が見つかりません" }}</h1>
                 <p v-if="!!author">by: {{ author }}</p>
             </div>
             <ContentDoc
