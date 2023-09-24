@@ -3,7 +3,7 @@ title: "LEDCUBE"
 description: "LEDを格子状に繋げた立方体です。音楽に合わせて光らせたりすることができます。"
 author: "Toshihiro Tange"
 icon: "💡"
-tags: ["作品"]
+tags: ["作品", "電子工作"]
 image: "/images/blog/ledcube.png"
 ---
 

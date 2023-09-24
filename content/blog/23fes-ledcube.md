@@ -2,7 +2,7 @@
 title: "LEDCUBE2023"
 author: "Koki Muramoto"
 icon: "💡"
-tags: ["2023年度文化祭"]
+tags: ["2023年度文化祭", "電子工作", "LEDCUBE"]
 ---
 
 ![image](/images/blog/ledcube.png)
